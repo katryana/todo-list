@@ -1,6 +1,6 @@
 [
   {
-    "model": "task.task",
+    "model": "manager.task",
     "pk": 1,
     "fields": {
       "content": "Finish project proposal",
@@ -11,7 +11,7 @@
     }
   },
   {
-    "model": "task.task",
+    "model": "manager.task",
     "pk": 2,
     "fields": {
       "content": "Buy groceries",
@@ -22,7 +22,7 @@
     }
   },
   {
-    "model": "task.task",
+    "model": "manager.task",
     "pk": 3,
     "fields": {
       "content": "Call Mom",
@@ -33,7 +33,7 @@
     }
   },
   {
-    "model": "task.task",
+    "model": "manager.task",
     "pk": 4,
     "fields": {
       "content": "Prepare presentation",
@@ -44,7 +44,7 @@
     }
   },
   {
-    "model": "task.task",
+    "model": "manager.task",
     "pk": 5,
     "fields": {
       "content": "Read book",
@@ -55,35 +55,35 @@
     }
   },
   {
-    "model": "task.tag",
+    "model": "manager.tag",
     "pk": 1,
     "fields": {
       "name": "Work"
     }
   },
   {
-    "model": "task.tag",
+    "model": "manager.tag",
     "pk": 2,
     "fields": {
       "name": "Personal"
     }
   },
   {
-    "model": "task.tag",
+    "model": "manager.tag",
     "pk": 3,
     "fields": {
       "name": "Groceries"
     }
   },
   {
-    "model": "task.tag",
+    "model": "manager.tag",
     "pk": 4,
     "fields": {
       "name": "Reading"
     }
   },
   {
-    "model": "task.tag",
+    "model": "manager.tag",
     "pk": 5,
     "fields": {
       "name": "Home"
