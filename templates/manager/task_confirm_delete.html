@@ -2,9 +2,13 @@
 
 {% block content %}
   <h1>Delete task?</h1>
-  <form action="" method="post">
-    {% csrf_token %}
+  <br>
 
+  <form class="inline" action="" method="post">
+    {% csrf_token %}
     <input type="submit" value="Yes" class="btn btn-danger">
   </form>
+  <br>
+  <a class="btn btn-secondary inline" href="{% url 'manager:task-list' %}">Cancel</a>
+
 {% endblock %}
