@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<main>
+  <h1>Tags <a class="btn btn-primary" href="{% url 'manager:tag-create' %}">Create a tag</a></h1>
+
+  {% if tag_list %}
+    {% for tag in tag_list %}
+      <p> {{ tag.name }}</p>
+
+      <a class="btn btn-secondary" href="{% url 'manager:tag-update' tag.id %}">Update</a>
+      <a class="btn btn-danger" href="{% url 'manager:tag-delete' tag.id %}">Delete</a><hr>
+    {% endfor %}
+  {% endif %}
+</main>
+
+{% endblock content %}

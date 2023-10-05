@@ -1,0 +1,92 @@
+[
+  {
+    "model": "manager.task",
+    "pk": 1,
+    "fields": {
+      "content": "Finish project proposal",
+      "created_at": "2023-10-05T09:00:00Z",
+      "deadline": "2023-10-15T17:00:00Z",
+      "is_done": false,
+      "tags": [1, 2]
+    }
+  },
+  {
+    "model": "manager.task",
+    "pk": 2,
+    "fields": {
+      "content": "Buy groceries",
+      "created_at": "2023-10-04T18:30:00Z",
+      "deadline": null,
+      "is_done": false,
+      "tags": [3, 5]
+    }
+  },
+  {
+    "model": "manager.task",
+    "pk": 3,
+    "fields": {
+      "content": "Call Mom",
+      "created_at": "2023-10-03T14:15:00Z",
+      "deadline": null,
+      "is_done": true,
+      "tags": []
+    }
+  },
+  {
+    "model": "manager.task",
+    "pk": 4,
+    "fields": {
+      "content": "Prepare presentation",
+      "created_at": "2023-10-05T11:30:00Z",
+      "deadline": "2023-10-12T14:00:00Z",
+      "is_done": false,
+      "tags": [1]
+    }
+  },
+  {
+    "model": "manager.task",
+    "pk": 5,
+    "fields": {
+      "content": "Read book",
+      "created_at": "2023-10-02T20:45:00Z",
+      "deadline": null,
+      "is_done": true,
+      "tags": [4, 5]
+    }
+  },
+  {
+    "model": "manager.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Work"
+    }
+  },
+  {
+    "model": "manager.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Personal"
+    }
+  },
+  {
+    "model": "manager.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Groceries"
+    }
+  },
+  {
+    "model": "manager.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Reading"
+    }
+  },
+  {
+    "model": "manager.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Home"
+    }
+  }
+]
