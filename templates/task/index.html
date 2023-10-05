@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<main>
+  <h1>TODO list</h1>
+  {% if task_list %}
+    {% for task in task_list %}
+      <p> {{ task.content }}</p>
+      <p> {{ task.created_at }}</p>
+      <p> {{ task.is_done }}</p>
+        <p>
+          {% if task.tags %}
+            {% for tag in task.tags.all %}
+              {{ tag.name }}
+            {% endfor %}
+          {% endif %}
+        </p>
+    {% endfor %}
+  {% endif %}
+</main>
+
+{% endblock content %}
