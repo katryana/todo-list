@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<main>
+  <h1>TODO list</h1>
+<a href="{% url 'manager:tag-create' %}">Create a tag</a>
+  {% if tag_list %}
+    {% for tag in tag_list %}
+      <p> {{ tag.name }}</p>
+
+      <a href="{% url 'manager:tag-update' tag.id %}">Update</a>
+      <a href="{% url 'manager:tag-delete' tag.id %}">Delete</a><hr>
+    {% endfor %}
+  {% endif %}
+</main>
+
+{% endblock content %}
