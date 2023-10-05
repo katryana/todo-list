@@ -3,7 +3,7 @@
 {% block content %}
 
 <main>
-  <h1>TODO list <a class="btn btn-primary" href="{% url 'manager:tag-create' %}">Create a tag</a></h1>
+  <h1>Tags <a class="btn btn-primary" href="{% url 'manager:tag-create' %}">Create a tag</a></h1>
 
   {% if tag_list %}
     {% for tag in tag_list %}

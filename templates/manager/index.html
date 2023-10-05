@@ -8,7 +8,12 @@
   {% if task_list %}
     {% for task in task_list %}
       <p> {{ task.content }}</p>
-      <p> {{ task.created_at }}</p>
+      <p><strong>Created at:</strong> {{ task.created_at }}</p>
+      {% if task.deadline %}
+        <p>
+          <strong>Deadline:</strong> {{ task.deadline }}
+        </p>
+      {% endif %}
         {% if task.is_done %}
           <a href="{% url 'manager:toggle-task-complete' pk=task.id act="undo" %}" class="btn btn-danger link-to-page">Undo</a>
           <p style="color: green">Done</p>
